@@ -1,6 +1,12 @@
 {
   "name": "nuxt-app",
   "private": true,
+  "engines": {
+    "npm": "Please use pnpm instead of npm.",
+    "yarn": "Please use pnpm instead of yarn.",
+    "pnpm": ">= 8.2.0",
+    "node": ">= 20.0.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,7 +16,21 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@types/node": "^18.17.3",
+    "@types/node": "^20.5.0",
     "nuxt": "^3.6.5"
+  },
+  "dependencies": {
+    "@auth/core": "^0.12.0",
+    "@hebilicious/authjs-nuxt": "0.3.0-beta.2",
+    "h3": "1.8.0-rc.3",
+    "nitropack": "npm:nitropack-edge@latest"
+  },
+  "overrides": {
+    "h3": "1.8.0-rc.3",
+    "nitropack": "npm:nitropack-edge@latest"
+  },
+  "resolutions": {
+    "h3": "1.8.0-rc.3",
+    "nitropack": "npm:nitropack-edge@latest"
   }
 }
